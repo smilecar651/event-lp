@@ -30,18 +30,33 @@ img{
  transform:none;
 }
 
-/* LINE固定ボタン */
-.fixed-line{
+/* 固定エリアまとめ */
+.fixed-wrap{
  position:fixed;
  bottom:0;
  left:0;
  width:100%;
  background:#06C755;
+ text-align:center;
+ z-index:999;
+ padding:6px 0 8px;
+}
+
+/* LINEボタン */
+.fixed-line{
+ width:100%;
  color:white;
- padding:14px;
+ padding:8px 14px;
  font-weight:bold;
  text-decoration:none;
- z-index:999;
+ display:block;
+}
+
+/* 注意文 */
+.fixed-note{
+ color:white;
+ font-size:12px;
+ opacity:0.9;
 }
 
 /* 共有ボタン */
@@ -57,7 +72,7 @@ img{
 }
 
 .space{
- height:80px;
+ height:90px;
 }
 </style>
 </head>
@@ -77,9 +92,17 @@ img{
 <div class="space"></div>
 
 <!-- 固定LINE -->
-<a href="https://lin.ee/XXXXXX" class="fixed-line">
-📩 来場前に通知を受け取る（LINE）
-</a>
+<div class="fixed-wrap">
+
+  <a href="https://lin.ee/XBR1buH" class="fixed-line">
+   📩 来場前に通知を受け取る（LINE）
+  </a>
+
+  <div class="fixed-note">
+   ※すでにLINE登録済みの方はそのままでOKです😊
+  </div>
+
+</div>
 
 <script>
 // フェード表示
@@ -108,4 +131,3 @@ function shareLine(){
 
 </body>
 </html>
-
